@@ -16,11 +16,18 @@
 
 <body>
 <!-- Navbar -->
-<nav class="navbar">
+<nav class="navbar navbar-expand-lg">
   <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/logo.png" alt="logo" class="logo-1"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+      </ul>
+    </div>
   </div>
 </nav>
-<!-- End Navbar --> 
+<!-- End Navbar -->
 <!-------Banner Start------->
 <section class="banner" data-scroll-index='0'>
   <div class="banner-overlay">
@@ -45,7 +52,70 @@
   </div>
 </section>
 
-<!-------Banner End------->   
+<!-------Banner End------->
+<!-------Contact Start------->
+<section class="contact section-padding" data-scroll-index='6'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center">
+          <h3>Contact us</h3>
+          <span class="line"></span>
+          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <form id="contact_form" action="">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+                <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
+                <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
+                <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="contact-info white">
+                <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">Address</p>
+                    <p class="text-uppercase">New Delhi, India</p>
+                  </div>
+                </div>
+                <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">Phone</p>
+                    <p class="text-uppercase"><a class="text-white" href="tel:+15173977100">009900990099</a> </p>
+                  </div>
+                </div>
+                <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">E-mail</p>
+                    <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">yogeshsingh.now@gmail.com</a> </p>
+                  </div>
+                </div>
+                <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">Working Hours</p>
+                    <p class="text-uppercase">Mon-Fri 9.00 AM to 5.00PM.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------Contact End------->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
